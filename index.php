@@ -73,9 +73,16 @@ class Ekomi
 	}
 }
 
+/* usage */
+
 $ekomi = new Ekomi("XXXXX", "XXXXXXXXXXXXXXXXXXXX");
+
 $link = $ekomi->createProduct("00001", "Produktname #1");
+
 $link = $ekomi->createProduct("00002", "Produktname #2");
+
 $link = $ekomi->createProduct("00003", "Produktname #3");
+
 $link = $ekomi->generateLink("3298748a");
+
 $link = $ekomi->generateLink("3298748b", ["00001", "00002", "00003"]);
